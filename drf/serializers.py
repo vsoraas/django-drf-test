@@ -9,4 +9,3 @@ class HelloSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = HelloWorld
         fields = ['extra', 'sender', 'print', 'from_api', 'creation_date']
-        #read_only_fields = ['print', 'from_api', 'creation_date']
