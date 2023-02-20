@@ -7,12 +7,6 @@ from drf.views import HelloViewSet
 
 ### DRF ###
 
-class HelloSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = HelloWorld
-        fields = ['url', 'username', 'email', 'is_staff']
-
-
 router = routers.DefaultRouter()
 router.register(r'helloworld', HelloViewSet)
 
